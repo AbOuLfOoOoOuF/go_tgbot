@@ -9,6 +9,7 @@ import (
 	"github.com/itsLuuke/go_tgbot/modules"
 	"github.com/itsLuuke/go_tgbot/modules/admin"
 	"github.com/itsLuuke/go_tgbot/modules/chatmember"
+	"github.com/itsLuuke/go_tgbot/modules/dev"
 	"github.com/itsLuuke/go_tgbot/modules/misc"
 	"github.com/itsLuuke/go_tgbot/modules/start"
 )
@@ -25,6 +26,7 @@ func LoadModules(d *ext.Dispatcher) {
 	chatmember.LoadChatMemUpdates(d)
 	admin.LoadAdmin(d)
 	misc.LoadMisc(d)
+	dev.LoadDev(d)
 
 }
 
